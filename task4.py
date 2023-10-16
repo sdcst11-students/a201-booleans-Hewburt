@@ -18,6 +18,10 @@ the sentence does not contain password
 Enter a sentence: The best password is no password.
 the sentence contains password
 """
-x = (input("a sentence"))
-"password" in x
+
+sentence = input("Enter a sentence: ")
+if "password" in sentence.lower():
+    print("the sentence contains password")
+else:
+    print("the sentence does not contain password")
 
